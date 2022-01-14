@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642143886195
+    "lastModifiedOn": 1642144247299
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,7 +98,7 @@
       },
       {
         "name": "meat_prod_tonnes",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "Meat_supply_kgperCap",

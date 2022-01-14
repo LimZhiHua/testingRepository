@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642145236644
+    "lastModifiedOn": 1642145244954
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,7 +98,7 @@
       },
       {
         "name": "Urban (%)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "GDP per capita (int.-$) ($)",

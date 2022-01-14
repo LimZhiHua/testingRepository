@@ -10,13 +10,13 @@
       }
     ]
   },
-  "expression": "2008 \u003c Year \u003c\u003d2012",
+  "expression": "2008 \u003c Year",
   "$status": {
     "validated": true,
     "fullyTranslated": true,
     "ok": true,
     "message": "Incorrect formula: \u00272008 \u003c Year \u003c\u0027 : Expecting something more at end of expression(Parsing error at offset 13)",
-    "sql": "(2008 \u003c \"Year\") \u003c\u003d 2012"
+    "sql": "2008 \u003c \"Year\""
   },
   "distinct": false,
   "enabled": true

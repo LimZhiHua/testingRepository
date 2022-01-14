@@ -25,7 +25,76 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "Entity",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "CountryMeaning",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "Entity",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Entity",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:14906",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Entity",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "Code",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "CountryMeaning",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "Code",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "Code",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:15203",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Code",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -54,13 +123,48 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "val(\"Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)\") / Population",
         "column": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Population",
+          "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
+          "meat_prod_tonnes",
+          "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Entity"
+        ],
+        "values": [],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }

@@ -75,8 +75,76 @@
     }
   ],
   "postFilter": {
+    "uiData": {
+      "mode": "CUSTOM",
+      "conditions": [
+        {
+          "input": "Entity",
+          "col": "Code",
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "expression": "2008 \u003c Year \u003c\u003d2012",
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Entity",
+            "type": "string"
+          },
+          {
+            "name": "Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Per capita CO₂ emissions (tonnes per capita)",
+            "type": "string"
+          },
+          {
+            "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
+            "type": "string"
+          },
+          {
+            "name": "meat_prod_tonnes",
+            "type": "string"
+          },
+          {
+            "name": "Meat_supply_kgperCap",
+            "type": "string"
+          },
+          {
+            "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
+            "type": "string"
+          },
+          {
+            "name": "Urban (%)",
+            "type": "string"
+          },
+          {
+            "name": "GDP per capita (int.-$) ($)",
+            "type": "string"
+          },
+          {
+            "name": "Population",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      },
+      "validated": true,
+      "fullyTranslated": true,
+      "ok": true,
+      "message": "Column \"Y\" doesn\u0027t exist. ",
+      "sql": "(2008 \u003c \"Year\") \u003c\u003d 2012"
+    },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "addOriginColumn": false
 }

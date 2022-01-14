@@ -37,6 +37,7 @@
       "disabled": false,
       "type": "ArraySortProcessor",
       "params": {
+        "output": "idiot",
         "input": "meat_prod_tonnes per capita_avg",
         "sortingType": "NUM",
         "descending": true
@@ -56,6 +57,7 @@
     "GDP per capita (int.-$) ($)_avg": 248,
     "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita_avg": 300,
     "Urban (%)_avg": 141,
+    "idiot": 100,
     "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita_avg": 300,
     "count": 100,
     "Meat_supply_kgperCap_avg": 195,

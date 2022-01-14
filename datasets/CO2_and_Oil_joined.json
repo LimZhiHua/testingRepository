@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642143479110
+    "lastModifiedOn": 1642143587414
   },
   "creationTag": {
     "versionNumber": 0,
@@ -116,6 +116,18 @@
       },
       {
         "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
+        "type": "string"
+      },
+      {
+        "name": "Urban (%)",
+        "type": "string"
+      },
+      {
+        "name": "GDP per capita (int.-$) ($)",
+        "type": "string"
+      },
+      {
+        "name": "Population",
         "type": "string"
       }
     ],

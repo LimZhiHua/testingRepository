@@ -151,7 +151,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
@@ -161,10 +161,54 @@
         "columns": [
           "Entity"
         ],
-        "values": [],
+        "values": [
+          "World"
+        ],
         "matchingMode": "FULL_STRING",
         "action": "REMOVE_ROW",
         "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "meat_prod_tonnes per capita"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
       },
       "alwaysShowComment": false
     }

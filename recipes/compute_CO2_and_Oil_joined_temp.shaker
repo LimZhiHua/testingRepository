@@ -44,7 +44,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnValue",
@@ -62,6 +62,18 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Per capita CO₂ emissions (tonnes per capita)",
+        "sortingType": "NUM",
+        "descending": true
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -73,7 +85,7 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "Entity": 155,
-    "Per capita CO₂ emissions (tonnes per capita)": 300,
+    "Per capita CO₂ emissions (tonnes per capita)": 412,
     "Year": 100,
     "Meat_supply_kgperCap": 165,
     "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita": 300,

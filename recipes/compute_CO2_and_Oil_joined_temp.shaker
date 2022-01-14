@@ -26,8 +26,44 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "Per capita CO₂ emissions (tonnes per capita)",
+        "sortingType": "NUM",
+        "descending": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Year"
+        ],
+        "values": [
+          "2010"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +71,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Entity": 155,
+    "Per capita CO₂ emissions (tonnes per capita)": 300,
+    "Year": 100,
+    "Meat_supply_kgperCap": 165,
+    "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita": 300,
+    "GDP per capita (int.-$) ($)": 218,
+    "meat_prod_tonnes per capita": 239,
+    "Urban (%)": 100,
+    "Code": 100,
+    "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

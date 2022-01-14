@@ -36,7 +36,9 @@
       "$selected": false,
       "stddev": false,
       "first": false
-    },
+    }
+  ],
+  "values": [
     {
       "last": false,
       "max": false,
@@ -50,29 +52,8 @@
       "concatDistinct": false,
       "sum2": false,
       "min": false,
-      "countDistinct": true,
-      "avg": false,
-      "$selected": false,
-      "stddev": false,
-      "first": false
-    }
-  ],
-  "values": [
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "Per capita CO₂ emissions (tonnes per capita)",
-      "count": false,
-      "$idx": 0,
-      "sum": false,
-      "concat": false,
-      "type": "double",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
-      "avg": true,
+      "avg": false,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -81,7 +62,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Meat_supply_kgperCap",
+      "column": "Per capita CO₂ emissions (tonnes per capita)",
       "count": false,
       "$idx": 1,
       "sum": false,
@@ -100,7 +81,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Urban (%)",
+      "column": "Meat_supply_kgperCap",
       "count": false,
       "$idx": 2,
       "sum": false,
@@ -119,7 +100,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "GDP per capita (int.-$) ($)",
+      "column": "Urban (%)",
       "count": false,
       "$idx": 3,
       "sum": false,
@@ -138,7 +119,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita",
+      "column": "GDP per capita (int.-$) ($)",
       "count": false,
       "$idx": 4,
       "sum": false,
@@ -157,7 +138,7 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "meat_prod_tonnes per capita",
+      "column": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita",
       "count": false,
       "$idx": 5,
       "sum": false,
@@ -176,9 +157,28 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita",
+      "column": "meat_prod_tonnes per capita",
       "count": false,
       "$idx": 6,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": true,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita",
+      "count": false,
+      "$idx": 7,
       "sum": false,
       "concat": false,
       "type": "double",
@@ -241,10 +241,6 @@
           {
             "name": "Code",
             "type": "string"
-          },
-          {
-            "name": "Year",
-            "type": "bigint"
           },
           {
             "name": "Per capita CO₂ emissions (tonnes per capita)_avg",

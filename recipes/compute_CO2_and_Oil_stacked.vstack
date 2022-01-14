@@ -87,7 +87,7 @@
         }
       ]
     },
-    "expression": "2008 \u003c\u003d Year \u003c\u003d 2012",
+    "expression": "(2008 \u003c\u003d Year) \u0026\u0026 (Year \u003c\u003d 2012)",
     "$status": {
       "schema": {
         "columns": [
@@ -141,8 +141,8 @@
       "validated": true,
       "fullyTranslated": true,
       "ok": true,
-      "message": "Incorrect formula: \u00272008 \u003c\u003d Year \u003c\u0027 : Expecting something more at end of expression(Parsing error at offset 14)",
-      "sql": "(2008 \u003c\u003d \"Year\") \u003c\u003d 2012"
+      "message": "Incorrect formula: \u0027(2008 \u003c\u003d Year) \u0026\u0026 ()Year \u003c\u003d 2012)\u0027 : Missing number, string, identifier, regex, or parenthesized expression(Parsing error at offset 19)",
+      "sql": "2008 \u003c\u003d \"Year\" AND \"Year\" \u003c\u003d 2012"
     },
     "distinct": false,
     "enabled": true

@@ -51,24 +51,82 @@
   "virtualInputs": [
     {
       "preFilter": {
+        "uiData": {
+          "mode": "CUSTOM",
+          "conditions": [
+            {
+              "input": "Entity",
+              "col": "Code",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "expression": "2018 \u003c Year \u003c\u003d2012",
+        "$status": {
+          "validated": true,
+          "fullyTranslated": true,
+          "ok": true,
+          "message": "Column \"year\" doesn\u0027t exist. Did you mean \"Year\"?",
+          "sql": "(2018 \u003c \"Year\") \u003c\u003d 2012"
+        },
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "CO2_and_Oil",
       "index": 0
     },
     {
       "preFilter": {
+        "uiData": {
+          "mode": "CUSTOM",
+          "conditions": [
+            {
+              "input": "Entity",
+              "col": "Code",
+              "string": "2018 \u003c Year \u003c\u003d2012",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "expression": "2018 \u003c Year \u003c\u003d2012",
+        "$status": {
+          "validated": true,
+          "fullyTranslated": true,
+          "ok": true,
+          "message": "Filter expression is invalid",
+          "sql": "(2018 \u003c \"Year\") \u003c\u003d 2012"
+        },
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "Meat_and_Egg_Production",
       "index": 1
     },
     {
       "preFilter": {
+        "uiData": {
+          "mode": "CUSTOM",
+          "conditions": [
+            {
+              "input": "Entity",
+              "col": "Code",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "expression": "2018 \u003c Year \u003c\u003d2012",
+        "$status": {
+          "validated": true,
+          "fullyTranslated": true,
+          "ok": true,
+          "message": "Filter expression is invalid",
+          "sql": "(2018 \u003c \"Year\") \u003c\u003d 2012"
+        },
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "Urbanization_GDP_and_Population",
       "index": 2

@@ -26,8 +26,24 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArraySortProcessor",
+      "params": {
+        "input": "meat_prod_tonnes per capita_avg",
+        "sortingType": "NUM",
+        "descending": true
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +51,18 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Entity": 155,
+    "GDP per capita (int.-$) ($)_avg": 248,
+    "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita_avg": 300,
+    "Urban (%)_avg": 141,
+    "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita_avg": 300,
+    "count": 100,
+    "Meat_supply_kgperCap_avg": 195,
+    "Per capita CO₂ emissions (tonnes per capita)_avg": 300,
+    "Code": 100,
+    "meat_prod_tonnes per capita_avg": 267
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {

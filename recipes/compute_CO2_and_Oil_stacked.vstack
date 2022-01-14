@@ -75,6 +75,23 @@
     }
   ],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "Year",
+          "col": "Code",
+          "num": 2008,
+          "operator": "\u003e  [number]"
+        },
+        {
+          "input": "Year",
+          "col": "Code",
+          "num": 2012,
+          "operator": "\u003c\u003d [number]"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -120,14 +137,18 @@
           },
           {
             "name": "Population",
-            "type": "int"
+            "type": "bigint"
           }
         ],
         "userModified": false
-      }
+      },
+      "validated": true,
+      "fullyTranslated": false,
+      "ok": false,
+      "message": "Filter expression is invalid"
     },
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "addOriginColumn": false
 }

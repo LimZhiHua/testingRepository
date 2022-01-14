@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642144490662
+    "lastModifiedOn": 1642144656738
   },
   "creationTag": {
     "versionNumber": 0,
@@ -128,7 +128,7 @@
       },
       {
         "name": "Population",
-        "type": "int"
+        "type": "bigint"
       }
     ],
     "userModified": true

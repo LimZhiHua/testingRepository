@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642145268911
+    "lastModifiedOn": 1642145271945
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,7 +98,7 @@
       },
       {
         "name": "Per capita CO₂ emissions (tonnes per capita)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",

@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642144351679
+    "lastModifiedOn": 1642144353794
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,7 +96,8 @@
       },
       {
         "name": "Year",
-        "type": "int"
+        "type": "int",
+        "meaning": "LongMeaning"
       },
       {
         "name": "Per capita CO₂ emissions (tonnes per capita)",

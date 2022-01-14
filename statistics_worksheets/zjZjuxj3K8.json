@@ -601,6 +601,17 @@
             "id": "SKIdCkJ"
           }
         ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "GDP per capita (int.-$) ($)_avg",
+            "type": "CONTINUOUS"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
         "id": "YQbec1t"
       },
       {
@@ -650,11 +661,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642149299236
+    "lastModifiedOn": 1642151986037
   },
   "creationTag": {
     "versionNumber": 0,

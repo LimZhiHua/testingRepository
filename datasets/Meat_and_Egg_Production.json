@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642143386123
+    "lastModifiedOn": 1642143886195
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,7 +94,7 @@
       },
       {
         "name": "Year",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "meat_prod_tonnes",

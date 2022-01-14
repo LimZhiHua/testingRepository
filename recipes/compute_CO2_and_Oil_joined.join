@@ -255,7 +255,7 @@
         }
       ]
     },
-    "expression": "(2008 \u003c\u003d Year) \u0026\u0026 (Year \u003c\u003d 2012) \u0026\u0026 Entity !\u003d \"World\"",
+    "expression": "(2008 \u003c\u003d Year) \u0026\u0026 (Year \u003c\u003d 2012)",
     "$status": {
       "schema": {
         "columns": [
@@ -310,7 +310,7 @@
       "fullyTranslated": true,
       "ok": true,
       "message": "Incorrect formula: \u0027(2008 \u003c\u003d Year) \u0026\u0026 (Year \u003c\u003d 2012) \u0026\u0026 Entity !\u003d\u0027 : Expecting something more at end of expression(Parsing error at offset 45)",
-      "sql": "2008 \u003c\u003d \"Year\" AND \"Year\" \u003c\u003d 2012 AND (\"Entity\" !\u003d \u0027World\u0027 OR \"Entity\" IS NULL AND \u0027World\u0027 IS NOT NULL OR \"Entity\" IS NOT NULL AND \u0027World\u0027 IS NULL)"
+      "sql": "2008 \u003c\u003d \"Year\" AND \"Year\" \u003c\u003d 2012"
     },
     "enabled": true
   },

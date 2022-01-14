@@ -1,5 +1,5 @@
 {
-  "mode": "REMAP",
+  "mode": "UNION",
   "selectedColumns": [
     "Entity",
     "Code",
@@ -55,20 +55,7 @@
         "enabled": false
       },
       "originLabel": "CO2_and_Oil",
-      "index": 0,
-      "columnsMatch": [
-        "Entity",
-        "Code",
-        "Year",
-        "Per capita CO₂ emissions (tonnes per capita)",
-        "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "index": 0
     },
     {
       "preFilter": {
@@ -76,20 +63,7 @@
         "enabled": false
       },
       "originLabel": "Meat_and_Egg_Production",
-      "index": 1,
-      "columnsMatch": [
-        "Entity",
-        "Code",
-        "Year",
-        "meat_prod_tonnes",
-        "Meat_supply_kgperCap",
-        "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "index": 1
     },
     {
       "preFilter": {
@@ -97,20 +71,7 @@
         "enabled": false
       },
       "originLabel": "Urbanization_GDP_and_Population",
-      "index": 2,
-      "columnsMatch": [
-        "Entity",
-        "Code",
-        "Year",
-        "Urban (%)",
-        "GDP per capita (int.-$) ($)",
-        "Population",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "index": 2
     }
   ],
   "copySchemaFromDatasetWithName": "CO2_and_Oil",
@@ -140,11 +101,11 @@
           },
           {
             "name": "Year",
-            "type": "string"
+            "type": "int"
           },
           {
             "name": "Per capita CO₂ emissions (tonnes per capita)",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
@@ -164,15 +125,15 @@
           },
           {
             "name": "Urban (%)",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "GDP per capita (int.-$) ($)",
-            "type": "string"
+            "type": "double"
           },
           {
             "name": "Population",
-            "type": "string"
+            "type": "double"
           }
         ],
         "userModified": false
@@ -184,7 +145,7 @@
       "sql": "(2008 \u003c \"Year\") \u003c\u003d 2012"
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   },
   "addOriginColumn": false
 }

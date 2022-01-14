@@ -4,43 +4,185 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {},
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST",
+        "enabled": false
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "Entity",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Entity",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "Code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Code",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "Year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Year",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "Entity",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Entity",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "Code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Code",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "Year",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Year",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "Entity",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Code",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Year",
+      "type": "int",
       "table": 0
     },
     {
       "name": "Per capita CO₂ emissions (tonnes per capita)",
+      "type": "double",
       "table": 0
     },
     {
       "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
+      "type": "string",
       "table": 0
     },
     {
       "name": "meat_prod_tonnes",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Meat_supply_kgperCap",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
+      "type": "string",
       "table": 1
+    },
+    {
+      "name": "Urban (%)",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "GDP per capita (int.-$) ($)",
+      "type": "double",
+      "table": 2
+    },
+    {
+      "name": "Population",
+      "type": "double",
+      "table": 2
     }
   ],
   "engineParams": {
@@ -95,7 +237,82 @@
       "autoSelectColumns": false,
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "uiData": {
+      "mode": "CUSTOM",
+      "conditions": [
+        {
+          "input": "Entity",
+          "col": "Code",
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "expression": "(2008 \u003c\u003d Year) \u0026\u0026 (Year \u003e\u003d 2012)",
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Entity",
+            "type": "string"
+          },
+          {
+            "name": "Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "int"
+          },
+          {
+            "name": "Per capita CO₂ emissions (tonnes per capita)",
+            "type": "double"
+          },
+          {
+            "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
+            "type": "string"
+          },
+          {
+            "name": "meat_prod_tonnes",
+            "type": "string"
+          },
+          {
+            "name": "Meat_supply_kgperCap",
+            "type": "string"
+          },
+          {
+            "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
+            "type": "string"
+          },
+          {
+            "name": "Urban (%)",
+            "type": "double"
+          },
+          {
+            "name": "GDP per capita (int.-$) ($)",
+            "type": "double"
+          },
+          {
+            "name": "Population",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      },
+      "validated": true,
+      "fullyTranslated": true,
+      "ok": true,
+      "message": "Incorrect formula: \u0027(2008 \u003c Year) \u0026\u0026 (Year \u003e)\u0027 : Missing number, string, identifier, regex, or parenthesized expression(Parsing error at offset 24)",
+      "sql": "2008 \u003c\u003d \"Year\" AND \"Year\" \u003e\u003d 2012"
+    },
+    "enabled": true
+  },
   "enableAutoCastInJoinConditions": false
 }

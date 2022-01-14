@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642145075358
+    "lastModifiedOn": 1642145348604
   },
   "creationTag": {
     "versionNumber": 0,
@@ -96,12 +96,12 @@
       },
       {
         "name": "Year",
-        "type": "string",
+        "type": "int",
         "meaning": "LongMeaning"
       },
       {
         "name": "Per capita CO₂ emissions (tonnes per capita)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
@@ -121,15 +121,15 @@
       },
       {
         "name": "Urban (%)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "GDP per capita (int.-$) ($)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Population",
-        "type": "string"
+        "type": "double"
       }
     ],
     "userModified": true

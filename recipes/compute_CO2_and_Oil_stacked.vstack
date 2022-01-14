@@ -1,17 +1,11 @@
 {
-  "mode": "UNION",
+  "mode": "FROM_DATASET",
   "selectedColumns": [
     "Entity",
     "Code",
     "Year",
     "Per capita CO₂ emissions (tonnes per capita)",
-    "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
-    "meat_prod_tonnes",
-    "Meat_supply_kgperCap",
-    "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
-    "Urban (%)",
-    "GDP per capita (int.-$) ($)",
-    "Population"
+    "Oil production (Etemad \u0026 Luciana) (terawatt-hours)"
   ],
   "originColumnName": "original_dataset",
   "engineParams": {
@@ -74,6 +68,7 @@
       "index": 2
     }
   ],
+  "copySchemaFromDatasetWithName": "CO2_and_Oil",
   "postFilter": {
     "uiData": {
       "mode": "CUSTOM",
@@ -109,33 +104,9 @@
           {
             "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
             "type": "string"
-          },
-          {
-            "name": "meat_prod_tonnes",
-            "type": "string"
-          },
-          {
-            "name": "Meat_supply_kgperCap",
-            "type": "string"
-          },
-          {
-            "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
-            "type": "string"
-          },
-          {
-            "name": "Urban (%)",
-            "type": "string"
-          },
-          {
-            "name": "GDP per capita (int.-$) ($)",
-            "type": "string"
-          },
-          {
-            "name": "Population",
-            "type": "int"
           }
         ],
-        "userModified": false
+        "userModified": true
       },
       "validated": true,
       "fullyTranslated": true,
@@ -144,7 +115,7 @@
       "sql": "(2008 \u003c \"Year\") \u003c\u003d 2012"
     },
     "distinct": false,
-    "enabled": true
+    "enabled": false
   },
   "addOriginColumn": false
 }

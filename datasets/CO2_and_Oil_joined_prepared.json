@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642147463842
+    "lastModifiedOn": 1642147605029
   },
   "creationTag": {
     "versionNumber": 0,
@@ -128,6 +128,18 @@
       },
       {
         "name": "Population",
+        "type": "double"
+      },
+      {
+        "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita",
+        "type": "double"
+      },
+      {
+        "name": "meat_prod_tonnes per capita",
+        "type": "double"
+      },
+      {
+        "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita",
         "type": "double"
       }
     ],

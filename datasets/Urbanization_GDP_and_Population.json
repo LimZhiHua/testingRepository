@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642143422040
+    "lastModifiedOn": 1642143864213
   },
   "creationTag": {
     "versionNumber": 0,
@@ -94,7 +94,7 @@
       },
       {
         "name": "Year",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "Urban (%)",

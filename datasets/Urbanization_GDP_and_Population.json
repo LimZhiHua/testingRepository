@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642145244954
+    "lastModifiedOn": 1642145247941
   },
   "creationTag": {
     "versionNumber": 0,
@@ -102,7 +102,7 @@
       },
       {
         "name": "GDP per capita (int.-$) ($)",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Population",

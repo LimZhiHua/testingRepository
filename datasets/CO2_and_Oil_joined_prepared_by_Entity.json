@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642148612311
+    "lastModifiedOn": 1642148692504
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,42 @@
       {
         "name": "Entity",
         "type": "string"
+      },
+      {
+        "name": "Code",
+        "type": "string"
+      },
+      {
+        "name": "Year",
+        "type": "bigint"
+      },
+      {
+        "name": "Per capita CO₂ emissions (tonnes per capita)_avg",
+        "type": "double"
+      },
+      {
+        "name": "Meat_supply_kgperCap_avg",
+        "type": "double"
+      },
+      {
+        "name": "Urban (%)_avg",
+        "type": "double"
+      },
+      {
+        "name": "GDP per capita (int.-$) ($)_avg",
+        "type": "double"
+      },
+      {
+        "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes) Per Capita_avg",
+        "type": "double"
+      },
+      {
+        "name": "meat_prod_tonnes per capita_avg",
+        "type": "double"
+      },
+      {
+        "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita_avg",
+        "type": "double"
       },
       {
         "name": "count",

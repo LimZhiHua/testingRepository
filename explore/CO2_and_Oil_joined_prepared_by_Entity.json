@@ -24,7 +24,7 @@
     },
     "sorting": [
       {
-        "column": "Urban (%)_avg",
+        "column": "meat_prod_tonnes per capita_avg",
         "ascending": true
       }
     ],

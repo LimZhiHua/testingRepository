@@ -1,5 +1,5 @@
 {
-  "mode": "UNION",
+  "mode": "REMAP",
   "selectedColumns": [
     "Entity",
     "Code",
@@ -55,7 +55,20 @@
         "enabled": false
       },
       "originLabel": "CO2_and_Oil",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "Entity",
+        "Code",
+        "Year",
+        "Per capita CO₂ emissions (tonnes per capita)",
+        "Oil production (Etemad \u0026 Luciana) (terawatt-hours)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "preFilter": {
@@ -63,7 +76,20 @@
         "enabled": false
       },
       "originLabel": "Meat_and_Egg_Production",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "Entity",
+        "Code",
+        "Year",
+        "meat_prod_tonnes",
+        "Meat_supply_kgperCap",
+        "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "preFilter": {
@@ -71,9 +97,23 @@
         "enabled": false
       },
       "originLabel": "Urbanization_GDP_and_Population",
-      "index": 2
+      "index": 2,
+      "columnsMatch": [
+        "Entity",
+        "Code",
+        "Year",
+        "Urban (%)",
+        "GDP per capita (int.-$) ($)",
+        "Population",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
+  "copySchemaFromDatasetWithName": "CO2_and_Oil",
   "postFilter": {
     "uiData": {
       "mode": "CUSTOM",
@@ -140,7 +180,7 @@
       "validated": true,
       "fullyTranslated": true,
       "ok": true,
-      "message": "Column \"Y\" doesn\u0027t exist. ",
+      "message": "Column \"Year2008\" doesn\u0027t exist. Did you mean \"Year\"?",
       "sql": "(2008 \u003c \"Year\") \u003c\u003d 2012"
     },
     "distinct": false,

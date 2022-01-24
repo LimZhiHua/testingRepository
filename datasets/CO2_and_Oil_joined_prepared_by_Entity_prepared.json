@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642150826350
+    "lastModifiedOn": 1642150212197
   },
   "creationTag": {
     "versionNumber": 0,
@@ -117,10 +117,6 @@
       {
         "name": "meat_prod_tonnes per capita_avg",
         "type": "double"
-      },
-      {
-        "name": "idiot",
-        "type": "string"
       },
       {
         "name": "Oil production (Etemad \u0026 Luciana) (terawatt-hours) Per Capita_avg",

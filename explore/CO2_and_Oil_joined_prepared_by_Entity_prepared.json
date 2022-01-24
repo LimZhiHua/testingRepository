@@ -22,7 +22,12 @@
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "meat_prod_tonnes per capita_avg",
+        "ascending": true
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {

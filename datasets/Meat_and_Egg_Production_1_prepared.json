@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643158987828
+    "lastModifiedOn": 1643159002389
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,10 +101,6 @@
       {
         "name": "meat_prod_tonnes",
         "type": "bigint"
-      },
-      {
-        "name": "Meat_supply_kgperCap",
-        "type": "double"
       },
       {
         "name": "Food Balance Sheets: Eggs - Production (FAO (2017)) (tonnes)",
